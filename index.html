@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Script" href="script.js">
+</head>
+
+<body>
+<div class="container">
+    <div class="header-container">
+    <!-- <body> -->
+        <div class="logo-container">
+            <img src="images/WSCCI.jpg" alt="Western Sydney Community Centre Logo" class="small-logo">
+            <img src="images/ACNC-Registered-Charity-Logo.png" alt="Registered Charity Logo" class="small-logo">
+        </div>
+        <div class="adress-container">
+            <img src="images/adress.png" alt="adress" class="adress-logo">
+        </div>
+    </div>
+    <h1>Feedback Form</h1>
+    <h3>* stand for required field</h3>
+    <!-- <h2>Improving Accessibility and Services of CALD Communities in Western and South Western Project</h2>
+    <h3>Participant Support Group</h3> -->
+
+    <div class="section">
+        <p>How do you feel after attending this support group?*</p>
+        <div class="radio-group" aria-required="true">
+            <label><input type="checkbox" name="feel" value="Most Satisfied"> Most Satisfied &#128522;</label>
+            <label><input type="checkbox" name="feel" value="Happy"> Happy &#128578;</label>
+            <label><input type="checkbox" name="feel" value="Unsure"> Unsure &#128528;</label>
+            <label><input type="checkbox" name="feel" value="Sad"> Sad &#128577;</label>
+            <label><input type="checkbox" name="feel" value="Unhappy"> Unhappy &#128542;</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <p>The support group taught me what I needed to know*</p>
+        <div class="radio-group">
+            <label><input type="checkbox" name="taught" value="Most Satisfied"> Most Satisfied &#128522;</label>
+            <label><input type="checkbox" name="taught" value="Happy"> Happy &#128578;</label>
+            <label><input type="checkbox" name="taught" value="Unsure"> Unsure &#128528;</label>
+            <label><input type="checkbox" name="taught" value="Sad"> Sad &#128577;</label>
+            <label><input type="checkbox" name="taught" value="Unhappy"> Unhappy &#128542;</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <p>Explained concepts clearly*</p>
+        <div class="radio-group">
+            <label><input type="checkbox" name="explained" value="Most Satisfied"> Most Satisfied &#128522;</label>
+            <label><input type="checkbox" name="explained" value="Happy"> Happy &#128578;</label>
+            <label><input type="checkbox" name="explained" value="Unsure"> Unsure &#128528;</label>
+            <label><input type="checkbox" name="explained" value="Sad"> Sad &#128577;</label>
+            <label><input type="checkbox" name="explained" value="Unhappy"> Unhappy &#128542;</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <label for="heard">How Did You Hear About Us:*</label>
+        <input type="text" id="heard" name="heard" placeholder="Enter your answer here">
+    </div>
+
+    <div class="section">
+        <label for="improve">How else can we improve?*</label>
+        <textarea id="improve" name="improve" rows="4" placeholder="Enter your answer here"></textarea>
+    </div>
+
+    <div class="section">
+        <p>How likely would you be to recommend us to a friend and family?*</p>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">5</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">4</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">2</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">1</label>
+        </div>
+    </div>
+    <div class="section">
+        <label for="heard">Any comments here*</label>
+        <textarea type="text" id="heard" name="heard" rows="3" placeholder="Enter your answer here"></textarea>
+    </div>
+
+    <div class="contact-details">
+        <p>Your Contact:*</p>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="tel" id="phone" name="phone" placeholder="Phone">
+        <input type="email" id="email" name="email" placeholder="Email">
+    </div>
+
+    <div class="section">
+        <button type="submit">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>

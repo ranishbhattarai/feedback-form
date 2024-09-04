@@ -1,0 +1,164 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating label {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label:before {
+    content: '☆';
+}
+
+.rating input:checked ~ label:before {
+    content: '★';
+    color: gold;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-details input {
+    width: calc(50% - 10px);
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #005bb5;
+    color: blanchedalmond;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between logos and the form content */
+    height: 80px; /* Ensures that all elements within this container are aligned */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px; /* Space between logos and the form content */
+}
+
+.small-logo {
+    width: 100px;  /* Set the width to 50px */
+    height: 100px; /* Set the height to 50px */
+    margin-right: 10px; /* Space between logos */
+    object-fit: contain; /* Ensure the image fits within the given dimensions */
+}
+.adress-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Push the content to the right */
+    height: 100%; /* Align with the header container height */
+
+}
+.adress-logo {
+    width: 100px; /* Adjust the width as needed for the address logo */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img,
+    .adress-container img {
+        max-width: 80px; /* Adjust as needed for smaller screens */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img,
+    .adress-container img {
+        max-width: 60px; /* Further adjust for very small screens */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+
